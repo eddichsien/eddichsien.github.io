@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Australia East Coast 12-Day Grand Tour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .day-card { border-radius: 1rem; overflow: hidden; margin-bottom: 2.5rem; background: white; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .hotel-box { background-color: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 1.25rem; margin-top: 1rem; border-radius: 0.5rem; }
+        .map-link { display: inline-flex; align-items: center; gap: 0.5rem; background-color: #fff; border: 1px solid #cbd5e1; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.875rem; color: #1e40af; font-weight: 600; transition: all 0.2s; margin-top: 0.75rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .map-link:hover { background-color: #eff6ff; border-color: #3b82f6; transform: translateY(-1px); }
+        .flight-table th { background-color: #f8fafc; color: #475569; font-weight: 700; }
+        .time-badge { background-color: #dbeafe; color: #1e40af; padding: 0.1rem 0.5rem; border-radius: 0.25rem; font-weight: 700; font-family: monospace; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Hero Section -->
+    <div class="relative h-[450px] flex items-center justify-center text-white">
+        <img src="https://www.australia.com/content/australia/en/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg" alt="Australia Beauty" class="absolute inset-0 w-full h-full object-cover brightness-50">
+        <div class="relative text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Australia East Coast 12-Day Tour</h1>
+            <p class="text-xl md:text-2xl font-light">Jhong Jhong Travel - 2026 Flagship Experience</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-sm">#Brisbane</span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-sm">#Sydney</span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-sm">#Melbourne</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 py-12">
+        
+        <!-- Flight Information -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                <span class="bg-blue-600 text-white p-1.5 rounded-lg">✈️</span> Flight Summary
+            </h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-sm border">
+                <table class="w-full text-left flight-table">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="p-4">Date</th>
+                            <th class="p-4">Flight</th>
+                            <th class="p-4">Departure</th>
+                            <th class="p-4">Arrival</th>
+                            <th class="p-4">Departure / Arrival Time</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y text-sm">
+                        <tr><td class="p-4">2026/02/01</td><td class="p-4 font-mono font-bold">CX 459</td><td class="p-4">Kaohsiung (KHH) T1</td><td class="p-4">Hong Kong (HKG) T1</td><td class="p-4 font-semibold">19:25 / 21:10</td></tr>
+                        <tr><td class="p-4">2026/02/01</td><td class="p-4 font-mono font-bold">CX 153</td><td class="p-4">Hong Kong (HKG) T1</td><td class="p-4">Brisbane (BNE) T1</td><td class="p-4 font-semibold">23:50 / 10:30+1</td></tr>
+                        <tr><td class="p-4">2026/02/05</td><td class="p-4 font-mono font-bold text-red-600">VA 524</td><td class="p-4">Gold Coast (OOL) T1</td><td class="p-4">Sydney (SYD) T2</td><td class="p-4 font-semibold">13:20 / 15:50</td></tr>
+                        <tr><td class="p-4">2026/02/08</td><td class="p-4 font-mono font-bold text-orange-600">JQ 523</td><td class="p-4">Sydney (SYD) T2</td><td class="p-4">Melbourne (MEL) T4</td><td class="p-4 font-semibold">15:45 / 17:20</td></tr>
+                        <tr><td class="p-4">2026/02/11</td><td class="p-4 font-mono font-bold">CX 178</td><td class="p-4">Melbourne (MEL) T2</td><td class="p-4">Hong Kong (HKG) T1</td><td class="p-4 font-semibold">23:45 / 06:45+1</td></tr>
+                        <tr><td class="p-4">2026/02/12</td><td class="p-4 font-mono font-bold">CX 424</td><td class="p-4">Hong Kong (HKG) T1</td><td class="p-4">Kaohsiung (KHH) T1</td><td class="p-4 font-semibold">10:45 / 12:15</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Daily Itinerary -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                <span class="bg-slate-800 text-white p-1.5 rounded-lg">🗓️</span> Daily Itinerary & Accommodation
+            </h2>
+
+            <!-- DAY 01 -->
+            <div class="day-card">
+                <div class="bg-slate-800 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 01</span>
+                    <span class="opacity-80">Feb 01 (Sun) Kaohsiung ✈ Hong Kong ✈ Brisbane</span>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-4">
+                        <li class="flex gap-4"><span class="time-badge">15:30</span><span>Meet at Asia-Pacific Institute of Hospitality and Culinary Arts.</span></li>
+                        <li class="flex gap-4"><span class="time-badge">19:25</span><span>Depart for Hong Kong via Cathay Pacific CX 459.</span></li>
+                        <li class="flex gap-4"><span class="time-badge">23:50</span><span>Depart for Brisbane via Cathay Pacific CX 153.</span></li>
+                    </ul>
+                    <div class="hotel-box bg-gray-100 border-gray-400 italic">Accommodation: Over-night Flight (Meals & Rest)</div>
+                </div>
+            </div>
+
+            <!-- DAY 02 -->
+            <div class="day-card">
+                <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 02</span>
+                    <span class="opacity-80">Feb 02 (Mon) Arrival in Brisbane: City Hall Tour</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <img src="https://i0.wp.com/reesetravel.com/wp-content/uploads/2021/07/brisbane-sign-cover.jpg?w=1200&ssl=1" class="rounded-lg h-56 w-full object-cover">
+                        <img src="https://ak-d.tripcdn.com/images/10021f000001gxee9DD5B.jpg" class="rounded-lg h-56 w-full object-cover">
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3"><span class="time-badge">10:30</span><span>Arrival at Brisbane Airport.</span></li>
+                        <li class="flex gap-3"><span class="time-badge">PM</span><span>Visit Brisbane City Hall and enjoy the famous croissants at Lune Croissanterie.</span></li>
+                    </ul>
+                    <div class="hotel-box">
+                        <h4 class="font-bold text-blue-800 mb-1">🏨 Accommodation: Rydges South Bank Brisbane</h4>
+                        <p class="text-sm">📍 9 Glenelg St, South Brisbane QLD 4101, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61733640800" class="hover:underline text-blue-600 font-semibold">+61 7 3364 0800</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rydges+South+Bank+Brisbane" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 03 -->
+            <div class="day-card">
+                <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 03</span>
+                    <span class="opacity-80">Feb 03 (Tue) Brisbane Arcade & Pelican Show</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <img src="https://taiwantour.info/wp-content/uploads/2023/12/1702360718-552af6f0a10c0a598f75ade8775a3a2d.jpg" class="rounded-lg h-56 w-full object-cover">
+                        <img src="https://peipei.tw/wp-content/uploads/thumb_20200704211423_46.jpg" class="rounded-lg h-56 w-full object-cover">
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3"><span class="time-badge">AM</span><span>Explore Brisbane's oldest arcade shop and Mount Coot-tha.</span></li>
+                        <li class="flex gap-3"><span class="time-badge">13:30</span><span>Watch the Pelican Feeding Show at Charis Seafoods.</span></li>
+                        <li class="flex gap-3"><span class="time-badge">PM</span><span>Free time for shopping at Pacific Fair Shopping Centre.</span></li>
+                    </ul>
+                    <div class="hotel-box">
+                        <h4 class="font-bold text-blue-800 mb-1">🏨 Accommodation: JW Marriott Gold Coast Resort & Spa</h4>
+                        <p class="text-sm">📍 158 Ferny Ave, Surfers Paradise QLD 4217, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61755929800" class="hover:underline text-blue-600 font-semibold">+61 7 5592 9800</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=JW+Marriott+Gold+Coast+Resort+%26+Spa" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 04 -->
+            <div class="day-card">
+                <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 04</span>
+                    <span class="opacity-80">Feb 04 (Wed) Farm Adventure & Glow Worms</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <img src="https://hogantai.com/wp-content/uploads/__pic_pimg_tw_hogantai_1519823848-2568627584_l_jpg.jpg" class="rounded-lg h-56 w-full object-cover">
+                        <img src="https://ak-d.tripcdn.com/images/0105212000eyvnn310310.jpg" class="rounded-lg h-56 w-full object-cover">
+                    </div>
+                    <p class="mb-4 text-gray-700">Spend the day at **Paradise Country**, experience sheep shearing and interact with kangaroos/koalas. After dinner, visit **Springbrook National Park** to discover the rare Glow Worms.</p>
+                    <div class="hotel-box">
+                        <h4 class="font-bold text-blue-800 mb-1">🏨 Accommodation: Hilton Surfers Paradise Hotel & Residences</h4>
+                        <p class="text-sm">📍 6 Orchid Ave, Surfers Paradise QLD 4217, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61756808000" class="hover:underline text-blue-600 font-semibold">+61 7 5680 8000</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hilton+Surfers+Paradise+Hotel+%26+Residences" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 05 -->
+            <div class="day-card">
+                <div class="bg-red-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 05</span>
+                    <span class="opacity-80">Feb 05 (Thu) Fly to Sydney: Sky High Views</span>
+                </div>
+                <div class="p-6">
+                    <img src="https://www.fittravel.com.au/wp-content/uploads/sydney-tower-eye-6-1.jpg" class="rounded-lg h-64 w-full object-cover mb-4">
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3"><span class="time-badge">13:20</span><span>Fly to Sydney via Virgin Australia VA 524.</span></li>
+                        <li class="flex gap-3"><span class="time-badge">Evening</span><span>Ascend the Sydney Tower Eye for a spectacular 360° city view.</span></li>
+                    </ul>
+                    <div class="hotel-box border-red-500 bg-red-50">
+                        <h4 class="font-bold text-red-800 mb-1">🏨 Accommodation: Meriton Suites World Tower, Sydney</h4>
+                        <p class="text-sm">📍 95 Liverpool St, Sydney NSW 2000, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61282637500" class="hover:underline text-red-600 font-semibold">+61 2 8263 7500</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Meriton+Suites+World+Tower+Sydney" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 06 -->
+            <div class="day-card">
+                <div class="bg-red-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 06</span>
+                    <span class="opacity-80">Feb 06 (Fri) Sydney Highlights: Opera House</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlFp4STQvysx6rxU2N0bp9kQ5h6Yl2xJjzSrIiD6kktbfrQCSsRzIWr_CGA8QaJ7IRM23ji2P1fokK4htLWN_xVPYCBzy18Ja6n8RETqy-hBLsB3fWojQxpX6Y_z1wIRVH7mzd-9_-lp_N/s1600/06DSC05258.JPG" class="rounded-lg h-40 w-full object-cover">
+                        <img src="https://www.101box.com/data/tour_item/Aquarium.jpg" class="rounded-lg h-40 w-full object-cover">
+                        <img src="https://cdn2.ettoday.net/images/3395/d3395246.jpg" class="rounded-lg h-40 w-full object-cover">
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>🚩 **Sydney Opera House**: Guided internal tour of Australia's most famous landmark.</li>
+                        <li>🐠 **SEA LIFE Aquarium**: Discover the marine life of the Great Barrier Reef.</li>
+                        <li>🎓 **University of Sydney**: Visit the iconic Quadrangle (known as the Harry Potter Building).</li>
+                    </ul>
+                    <div class="hotel-box border-red-500 bg-red-50">
+                        <h4 class="font-bold text-red-800 mb-1">🏨 Accommodation: InterContinental Sydney By IHG</h4>
+                        <p class="text-sm">📍 16 Phillip St, Sydney NSW 2000, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61292539000" class="hover:underline text-red-600 font-semibold">+61 2 9253 9000</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=InterContinental+Sydney+16+Phillip+St" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 07 -->
+            <div class="day-card">
+                <div class="bg-red-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 07</span>
+                    <span class="opacity-80">Feb 07 (Sat) Blue Mountains & Fireworks</span>
+                </div>
+                <div class="p-6 text-gray-700">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <img src="https://stancylife.com/wp-content/uploads/2025/10/batch_20251004_115734.jpg" class="rounded-lg h-56 w-full object-cover">
+                        <img src="https://assets.atdw-online.com.au/images/c5a79f85371eaf42a8687132b11a7ab9.jpeg?rect=107%2C0%2C1707%2C1280&w=1600&h=1200" class="rounded-lg h-56 w-full object-cover">
+                    </div>
+                    <p class="mb-4">Full day trip to **Blue Mountains National Park**, experience three types of cable cars at Scenic World. In the evening, enjoy the fireworks show at **Darling Harbour**.</p>
+                    <div class="hotel-box border-red-500 bg-red-50">
+                        <h4 class="font-bold text-red-800 mb-1">🏨 Accommodation: Crowne Plaza Sydney Darling Harbour</h4>
+                        <p class="text-sm">📍 58 Bathurst St, Sydney NSW 2000, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61290630110" class="hover:underline text-red-600 font-semibold">+61 2 9063 0110</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Crowne+Plaza+Sydney+Darling+Harbour" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 08-09 -->
+            <div class="day-card">
+                <div class="bg-green-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 08-09</span>
+                    <span class="opacity-80">Melbourne: Great Ocean Road Trip</span>
+                </div>
+                <div class="p-6 text-gray-700">
+                    <img src="https://image.kkday.com/v2/image/get/c_fill%2Ch_800%2Cq_55%2Ct_webp%2Cw_1240/s1.kkday.com/product_36066/20210526083753_qofu0/jpg" class="rounded-lg h-64 w-full object-cover mb-4">
+                    <ul class="space-y-3">
+                        <li class="flex gap-3"><span class="time-badge">D8 15:45</span><span>Fly to Melbourne via Jetstar JQ 523.</span></li>
+                        <li class="flex gap-3"><span class="time-badge">D9 All Day</span><span>**Great Ocean Road**: Witness the majestic Twelve Apostles.</span></li>
+                    </ul>
+                    <div class="hotel-box border-green-500 bg-green-50">
+                        <h4 class="font-bold text-green-800 mb-1">🏨 Accommodation: Quay West Suites Melbourne</h4>
+                        <p class="text-sm">📍 26 Southgate Ave, Southbank VIC 3006, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61396936000" class="hover:underline text-green-600 font-semibold">+61 3 9693 6000</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Quay+West+Suites+Melbourne" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 10 -->
+            <div class="day-card">
+                <div class="bg-green-600 text-white p-4 flex justify-between items-center">
+                    <span class="text-xl font-bold">DAY 10</span>
+                    <span class="opacity-80">Feb 10 (Tue) Steam Train & Penguin Parade</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <img src="https://bubugoaround.com/wp-content/uploads/puffing-billy-212.jpg" class="rounded-lg h-48 w-full object-cover">
+                        <img src="https://pimg.1px.tw/queenning/1384078593-1900993325.jpg" class="rounded-lg h-48 w-full object-cover">
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>🚂 **Puffing Billy Railway**: Ride the century-old steam train through the rainforest.</li>
+                        <li>🐧 **Phillip Island**: Witness the magical Penguin Parade as little penguins return to shore.</li>
+                    </ul>
+                    <div class="hotel-box border-green-500 bg-green-50">
+                        <h4 class="font-bold text-green-800 mb-1">🏨 Accommodation: Meriton Suites Melbourne</h4>
+                        <p class="text-sm">📍 140 King St, Melbourne VIC 3000, Australia</p>
+                        <p class="text-sm">📞 <a href="tel:+61370445400" class="hover:underline text-green-600 font-semibold">+61 3 7044 5400</a></p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Meriton+Suites+Melbourne+140+King+St" target="_blank" class="map-link">🗺️ Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips -->
+        <section class="bg-white rounded-2xl p-8 shadow-sm border">
+            <h2 class="text-2xl font-bold mb-8 text-center border-b pb-4">Essential Travel Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-2 flex items-center gap-2">🛂 Visa & Customs</h4>
+                    <p class="text-gray-600 text-sm">Taiwanese passport holders require an ETA. Strict quarantine: No fresh food, meat, or dairy products.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2 flex items-center gap-2">🕒 Time Zones</h4>
+                    <p class="text-gray-600 text-sm">Brisbane: GMT+10 (2hr ahead of TW). Sydney/Melbourne: GMT+11 (3hr ahead of TW during Daylight Savings).</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2 flex items-center gap-2">🔌 Power & Voltage</h4>
+                    <img src="https://www.isec.com.tw/data/uploader/images/20241107_163049.jpg" class="w-full rounded-lg mt-2 border">
+                    <p class="text-xs text-slate-400 mt-1">Voltage: 230V. Plug: Type I (three-pin flat).</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2 flex items-center gap-2">💰 Currency & Payment</h4>
+                    <p class="text-gray-600 text-sm">Australia is nearly cashless. Contactless payment (Apple Pay/Credit Card) is widely accepted everywhere.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-slate-900 text-white py-12 text-center mt-12">
+        <p class="text-lg font-bold mb-2">Jhong Jhong Travel - 2026 Flagship Tour</p>
+        <p class="text-slate-400 text-sm mb-4">Have a wonderful trip! Contact your tour leader for emergencies.</p>
+        <div class="text-xs text-slate-500">© 2026 AU Travel Plan. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
