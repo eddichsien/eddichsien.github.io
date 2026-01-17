@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳洲東岸三城全覽 12 日 - 中中旅行社 2026 年度旗艦</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; color: #1e293b; background-color: #f8fafc; scroll-behavior: smooth; }
+        .brand-blue { color: #1e3a8a; }
+        .bg-brand-blue { background-color: #1e3a8a; }
+        
+        .section-card { background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-bottom: 3rem; overflow: hidden; border: 1px solid #f1f5f9; }
+        .day-header { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 1.25rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+        
+        /* 圖片並排設計 */
+        .img-container { display: flex; gap: 12px; margin-bottom: 1.5rem; justify-content: start; flex-wrap: wrap; }
+        .img-box { flex: 1; min-width: 200px; max-width: 48%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
+        .img-box img { width: 100%; height: 240px; object-fit: cover; display: block; transition: transform 0.3s; }
+        .img-box img:hover { transform: scale(1.05); }
+
+        /* 三張圖片時的調整 */
+        .img-three .img-box { max-width: 32%; min-width: 180px; }
+
+        /* 單張圖片特殊處理 */
+        .img-box.single { max-width: 500px; flex: none; }
+
+        .time-step { position: relative; padding-left: 2rem; border-left: 2px solid #e2e8f0; margin-bottom: 1.25rem; font-size: 0.95rem; }
+        .time-step::before { content: ''; position: absolute; left: -9px; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: #3b82f6; border: 3px solid white; box-shadow: 0 0 0 1px #3b82f6; }
+        
+        .flight-info-box { background: #eff6ff; border: 1px dashed #3b82f6; padding: 0.75rem 1rem; border-radius: 8px; margin: 0.5rem 0 1rem 0; font-size: 0.85rem; color: #1d4ed8; display: flex; align-items: center; gap: 0.5rem; }
+
+        .hotel-info { background: #f0f9ff; border-left: 5px solid #3b82f6; padding: 1rem 1.5rem; border-radius: 0 12px 12px 0; margin-top: 1.5rem; color: #1e40af; font-weight: 700; font-size: 0.9rem; }
+        
+        .flight-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .flight-table th { background: #f1f5f9; padding: 12px; border: 1px solid #e2e8f0; font-weight: 800; color: #1e3a8a; }
+        .flight-table td { padding: 12px; border: 1px solid #e2e8f0; text-align: center; }
+
+        /* 注意事項樣式 */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .info-item { background: #fff; padding: 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; }
+        .info-icon { font-size: 1.5rem; margin-bottom: 0.75rem; display: block; }
+        .info-img { width: 100%; border-radius: 8px; margin-top: 12px; border: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <!-- 標頭主視覺 -->
+    <header class="relative h-[450px] flex items-center justify-center text-white text-center">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="https://www.australia.com/content/australia/en/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.1200.HIGH.jpg" class="absolute inset-0 w-full h-full object-cover" alt="澳洲之美">
+        <div class="relative z-20 px-4">
+            <h1 class="text-3xl md:text-5xl font-black mb-3 text-shadow-lg">澳洲東岸三城全覽 12 日</h1>
+            <p class="text-lg md:text-xl font-light tracking-[0.3em]">中中旅行社 2026 年度旗艦鉅獻</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+
+        <!-- 航班列表 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-black brand-blue mb-6 flex items-center">
+                <span class="w-2 h-8 bg-blue-600 mr-3 rounded-full"></span> 航班資訊快覽
+            </h2>
+            <div class="section-card">
+                <table class="flight-table">
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>班號</th>
+                            <th>出發城市 / 航廈</th>
+                            <th>抵達城市 / 航廈</th>
+                            <th>時間 (起/降)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2026/02/01</td><td>CX 459</td><td>高雄 (KHH) T1</td><td>香港 (HKG) T1</td><td>19:25 / 21:10</td></tr>
+                        <tr><td>2026/02/01</td><td>CX 153</td><td>香港 (HKG) T1</td><td>布里斯本 (BNE) T1</td><td>23:50 / 10:30+1</td></tr>
+                        <tr><td>2026/02/05</td><td>VA 524</td><td>黃金海岸 (OOL) T1</td><td>雪梨 (SYD) T2</td><td>13:20 / 15:50</td></tr>
+                        <tr><td>2026/02/08</td><td>JQ 523</td><td>雪梨 (SYD) T2</td><td>墨爾本 (MEL) T4</td><td>15:45 / 17:20</td></tr>
+                        <tr><td>2026/02/11</td><td>CX 178</td><td>墨爾本 (MEL) T2</td><td>香港 (HKG) T1</td><td>23:45 / 06:45+1</td></tr>
+                        <tr><td>2026/02/12</td><td>CX 424</td><td>香港 (HKG) T1</td><td>高雄 (KHH) T1</td><td>10:45 / 12:15</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 行程詳解 -->
+        <section class="space-y-10">
+
+            <!-- D1 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 01</span>
+                    <span class="font-bold">2026/02/01 (日) 高雄 ✈ 香港 ✈ 布里斯本</span>
+                </div>
+                <div class="p-8">
+                    <div class="time-step"><strong>15:30</strong> 亞洲高級餐旅職業學校集合。</div>
+                    <div class="time-step"><strong>16:30</strong> 高雄國際機場報到。</div>
+                    <div class="time-step">
+                        <strong>19:25</strong> 搭乘國泰航空 CX 459 前往香港。
+                        <div class="flight-info-box">✈️ CX 459 | KHH T1 (19:25) ➔ HKG T1 (21:10)</div>
+                    </div>
+                    <div class="time-step">
+                        <strong>23:50</strong> 香港機場轉機，搭乘 CX 153 飛向布里斯本。
+                        <div class="flight-info-box">✈️ CX 153 | HKG T1 (23:50) ➔ BNE T1 (10:30+1)</div>
+                    </div>
+                    <div class="hotel-info">住宿：機上精緻餐食與休憩</div>
+                </div>
+            </div>
+
+            <!-- D2 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 02</span>
+                    <span class="font-bold">2026/02/02 (一) 抵達布里斯本：市政廳巡禮</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box"><img src="https://i0.wp.com/reesetravel.com/wp-content/uploads/2021/07/brisbane-sign-cover.jpg?w=1200&ssl=1" alt="布里斯本標誌"></div>
+                        <div class="img-box"><img src="https://ak-d.tripcdn.com/images/10021f000001gxee9DD5B.jpg" alt="布里斯本市政廳"></div>
+                    </div>
+                    <div class="time-step"><strong>10:30</strong> 抵達布里斯本機場，辦理入境手續。</div>
+                    <div class="time-step"><strong>14:30</strong> 享受頂級 <strong>Lune Croissanterie</strong> 羊角麵包。</div>
+                    <div class="time-step"><strong>16:30</strong> 參訪經典地標 <strong>布里斯本市政廳 (City Hall)</strong>。</div>
+                    <div class="hotel-info">住宿：Rydges South Bank Brisbane</div>
+                </div>
+            </div>
+
+            <!-- D3 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 03</span>
+                    <span class="font-bold">2026/02/03 (二) 長廊商場購物與大嘴鳥秀</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box"><img src="https://taiwantour.info/wp-content/uploads/2023/12/1702360718-552af6f0a10c0a598f75ade8775a3a2d.jpg" alt="布里斯本長廊商場"></div>
+                        <div class="img-box"><img src="https://peipei.tw/wp-content/uploads/thumb_20200704211423_46.jpg" alt="大嘴鳥餵食秀"></div>
+                    </div>
+                    <div class="time-step"><strong>08:59</strong> 抵達 <strong>布里斯本長廊商場</strong> 展開晨間購物。</div>
+                    <div class="time-step"><strong>13:00</strong> <strong>Charis Seafoods</strong> 海鮮午餐與大嘴鳥餵食秀。</div>
+                    <div class="time-step"><strong>15:30</strong> <strong>Queen Street Mall</strong> 與 <strong>Pacific Fair</strong> 自由採買。</div>
+                    <div class="hotel-info">住宿：JW Marriott Gold Coast Resort & Spa</div>
+                </div>
+            </div>
+
+            <!-- D4 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 04</span>
+                    <span class="font-bold">2026/02/04 (三) 農莊奇遇與春溪螢火蟲</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box"><img src="https://hogantai.com/wp-content/uploads/__pic_pimg_tw_hogantai_1519823848-2568627584_l_jpg.jpg" alt="天堂農莊"></div>
+                        <div class="img-box"><img src="https://ak-d.tripcdn.com/images/0105212000eyvnn310310.jpg" alt="春溪國家公園"></div>
+                    </div>
+                    <div class="time-step"><strong>10:21</strong> 抵達 <strong>Paradise Country 天堂農莊</strong>。</div>
+                    <div class="time-step"><strong>19:06</strong> <strong>春溪國家公園</strong> 尋找螢火蟲洞。</div>
+                    <div class="hotel-info">住宿：Hilton Surfers Paradise Hotel & Residences</div>
+                </div>
+            </div>
+
+            <!-- D5 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 05</span>
+                    <span class="font-bold">2026/02/05 (四) 前往雪梨：城市俯瞰</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box single"><img src="https://www.fittravel.com.au/wp-content/uploads/sydney-tower-eye-6-1.jpg" alt="雪梨塔"></div>
+                    </div>
+                    <div class="time-step">
+                        <strong>11:09</strong> 前往黃金海岸機場。
+                    </div>
+                    <div class="time-step">
+                        <strong>13:20</strong> 搭乘維珍澳洲航空 VA 524 飛往雪梨。
+                        <div class="flight-info-box">✈️ VA 524 | OOL T1 (13:20) ➔ SYD T2 (15:50)</div>
+                    </div>
+                    <div class="time-step"><strong>19:13</strong> 登頂 <strong>Sydney Tower Eye 雪梨塔</strong>。</div>
+                    <div class="hotel-info">住宿：Meriton Suites World Tower, Sydney</div>
+                </div>
+            </div>
+
+            <!-- D6 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 06</span>
+                    <span class="font-bold">2026/02/06 (五) 雪梨大城：歌劇院與學府</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container img-three">
+                        <div class="img-box"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlFp4STQvysx6rxU2N0bp9kQ5h6Yl2xJjzSrIiD6kktbfrQCSsRzIWr_CGA8QaJ7IRM23ji2P1fokK4htLWN_xVPYCBzy18Ja6n8RETqy-hBLsB3fWojQxpX6Y_z1wIRVH7mzd-9_-lp_N/s1600/06DSC05258.JPG" alt="雪梨歌劇院夜拍"></div>
+                        <div class="img-box"><img src="https://www.101box.com/data/tour_item/Aquarium.jpg" alt="雪梨水族館"></div>
+                        <div class="img-box"><img src="https://cdn2.ettoday.net/images/3395/d3395246.jpg" alt="雪梨大學"></div>
+                    </div>
+                    <div class="time-step"><strong>10:35</strong> 專業導覽 <strong>雪梨歌劇院</strong>。</div>
+                    <div class="time-step"><strong>13:27</strong> 參觀 <strong>SEA LIFE 雪梨水族館</strong> 探索大堡礁海洋生態。</div>
+                    <div class="time-step"><strong>15:39</strong> <strong>雪梨大學</strong>「哈利波特大樓」漫步。</div>
+                    <div class="hotel-info">住宿：雪梨洲際酒店 (InterContinental Sydney)</div>
+                </div>
+            </div>
+
+            <!-- D7 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 07</span>
+                    <span class="font-bold">2026/02/07 (六) 藍山深度遊與達令港煙火</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box"><img src="https://stancylife.com/wp-content/uploads/2025/10/batch_20251004_115734.jpg" alt="藍山國家公園"></div>
+                        <div class="img-box"><img src="https://assets.atdw-online.com.au/images/c5a79f85371eaf42a8687132b11a7ab9.jpeg?rect=107%2C0%2C1707%2C1280&w=1600&h=1200" alt="達令港煙火"></div>
+                    </div>
+                    <div class="time-step"><strong>12:06</strong> <strong>Scenic World</strong> 景觀世界體驗。</div>
+                    <div class="time-step"><strong>21:00</strong> <strong>達令港煙火秀</strong>。</div>
+                    <div class="hotel-info">住宿：Crowne Plaza Sydney Darling Harbour by IHG</div>
+                </div>
+            </div>
+
+            <!-- D8 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 08</span>
+                    <span class="font-bold">2026/02/08 (日) 雪梨轉場：飛往墨爾本</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box single"><img src="https://res.cloudinary.com/dz9xllyip/image/fetch/c_scale,w_580,dpr_2.0,q_auto:good/https://s3-ap-southeast-2.amazonaws.com/www.urban.com.au/s3fs-public/pictures/article-images/melbourne-square-93-119-kavanagh-street-southbank-8d107fa0c127e0b10a58e6df6b938e07.jpeg" alt="Melbourne Square"></div>
+                    </div>
+                    <div class="time-step"><strong>09:52</strong> <strong>雪梨野生動物園</strong> (停留 2小時)。</div>
+                    <div class="time-step"><strong>13:21</strong> 抵達雪梨機場 (SYD) T2。</div>
+                    <div class="time-step">
+                        <strong>15:45</strong> 搭乘捷星航空 JQ 523 前往墨爾本。
+                        <div class="flight-info-box">✈️ JQ 523 | SYD T2 (15:45) ➔ MEL T4 (17:20)</div>
+                    </div>
+                    <div class="time-step"><strong>17:20</strong> 抵達墨爾本機場，接機前往市區。</div>
+                    <div class="time-step"><strong>19:21</strong> 入住 <strong>Quay West Suites Melbourne</strong>。</div>
+                    <div class="time-step"><strong>20:17</strong> <strong>Woolworths Melbourne Square</strong> 採買。</div>
+                    <div class="hotel-info">住宿：Quay West Suites Melbourne</div>
+                </div>
+            </div>
+
+            <!-- D9 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 09</span>
+                    <span class="font-bold">2026/02/09 (一) 墨爾本：大洋路朝聖</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box single"><img src="https://image.kkday.com/v2/image/get/c_fill%2Ch_800%2Cq_55%2Ct_webp%2Cw_1240/s1.kkday.com/product_36066/20210526083753_qofu0/jpg" alt="大洋路"></div>
+                    </div>
+                    <div class="time-step"><strong>10:23</strong> 暢遊 <strong>十二使徒岩</strong>。</div>
+                    <div class="hotel-info">住宿：Quay West Suites Melbourne</div>
+                </div>
+            </div>
+
+            <!-- D10 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 10</span>
+                    <span class="font-bold">2026/02/10 (二) 蒸汽火車與企鵝歸巢</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container img-three">
+                        <div class="img-box"><img src="https://ak-d.tripcdn.com/images/10021f000001gxee9DD5B.jpg" alt="維多利亞市場"></div>
+                        <div class="img-box"><img src="https://bubugoaround.com/wp-content/uploads/puffing-billy-212.jpg" alt="蒸汽火車"></div>
+                        <div class="img-box"><img src="https://pimg.1px.tw/queenning/1384078593-1900993325.jpg" alt="企鵝歸巢"></div>
+                    </div>
+                    <div class="time-step"><strong>08:02</strong> 墨爾本 <strong>維多利亞市場</strong> 晨間探索。</div>
+                    <div class="time-step"><strong>12:20</strong> 菲利浦島：觀賞小企鵝歸巢。</div>
+                    <div class="hotel-info">住宿：Meriton Suites Melbourne</div>
+                </div>
+            </div>
+
+            <!-- D11 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 11</span>
+                    <span class="font-bold">2026/02/11 (三) 市場巡禮與塗鴉巷弄</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box"><img src="https://i0.wp.com/bishdream.com/wp-content/uploads/2023/11/21102023_australia_south_melbourne_market-1.jpg" alt="南墨爾本市場"></div>
+                        <div class="img-box"><img src="https://liyuyu.blog/wp-content/uploads/pixnet/7d6bdeb07e82f030466efa26c9f3a353.jpg" alt="塗鴉巷"></div>
+                    </div>
+                    <div class="time-step"><strong>07:48</strong> 造訪 <strong>南墨爾本市場</strong>。</div>
+                    <div class="time-step"><strong>16:03</strong> <strong>Hosier Lane</strong> 塗鴉巷。</div>
+                    <div class="time-step">
+                        <strong>23:45</strong> 搭乘國泰航空 CX 178 踏上歸途。
+                        <div class="flight-info-box">✈️ CX 178 | MEL T2 (23:45) ➔ HKG T1 (06:45+1)</div>
+                    </div>
+                    <div class="hotel-info">住宿：機上休息</div>
+                </div>
+            </div>
+
+            <!-- D12 -->
+            <div class="section-card">
+                <div class="day-header">
+                    <span class="text-xl font-black italic">DAY 12</span>
+                    <span class="font-bold">2026/02/12 (四) 香港機場購物 ✈ 高雄</span>
+                </div>
+                <div class="p-8">
+                    <div class="img-container">
+                        <div class="img-box single"><img src="https://brandfugetsu.com/Contents/ProductImages/0/13727595652266_LL.jpg" alt="Chanel 經典包"></div>
+                    </div>
+                    <div class="time-step"><strong>06:45</strong> 抵達香港國際機場，自由購物時間。</div>
+                    <div class="time-step">
+                        <strong>10:45</strong> 搭乘國泰航空 CX 424 返回高雄。
+                        <div class="flight-info-box">✈️ CX 424 | HKG T1 (10:45) ➔ KHH T1 (12:15)</div>
+                    </div>
+                    <div class="time-step"><strong>12:15</strong> 抵達高雄小港機場，互道珍重。</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 旅遊須知 -->
+        <section class="mt-20">
+            <h2 class="text-2xl font-black brand-blue mb-10 flex items-center">
+                <span class="w-2 h-8 bg-blue-600 mr-3 rounded-full"></span> 澳洲旅遊行前須知
+            </h2>
+            
+            <div class="info-grid text-sm leading-relaxed">
+                <div class="info-item">
+                    <span class="info-icon">🛂</span>
+                    <h4 class="font-bold text-lg mb-2">簽證與入境</h4>
+                    <p>持有台灣護照需申請 <strong>ETA (電子旅遊簽證)</strong>。入境澳洲嚴禁攜帶任何新鮮蔬果、肉類、種子及乳製品。</p>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🕒</span>
+                    <h4 class="font-bold text-lg mb-2">時差資訊</h4>
+                    <p>昆士蘭州 +2hr。雪梨與墨爾本因<strong>夏令時間</strong>，比台灣快 3 小時。</p>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🔌</span>
+                    <h4 class="font-bold text-lg mb-2">電壓與插座</h4>
+                    <p>澳洲電壓為 220-240V，插座為<strong>八字型三孔插座</strong>。</p>
+                    <img src="https://www.isec.com.tw/data/uploader/images/20241107_163049.jpg" class="info-img" alt="澳洲插座說明圖">
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">☀️</span>
+                    <h4 class="font-bold text-lg mb-2">氣候與穿著</h4>
+                    <p>2 月為澳洲夏季，氣溫約 20-30°C。陽光極強，請備妥高係數防曬乳。建議採洋蔥式穿法。</p>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">💰</span>
+                    <h4 class="font-bold text-lg mb-2">匯率與支付</h4>
+                    <p>澳洲支付極度無紙化，建議多使用信用卡感應。硬幣辨識參考如下：</p>
+                    <div class="grid grid-cols-2 gap-2 mt-2">
+                        <img src="https://www.ozexplorers.com/assets/images/2024/202406153.png" class="rounded border" alt="澳幣硬幣辨識 1">
+                        <img src="https://www.ozexplorers.com/assets/images/2024/202406152.png" class="rounded border" alt="澳幣硬幣辨識 2">
+                    </div>
+                    <a href="https://www.ozexplorers.com/%E6%BE%B3%E6%B4%B2%E7%94%9F%E6%B4%BB/2024/06/15/how-to-quickly-identify-the-value-of-australian-coins.html" target="_blank" class="text-xs text-blue-500 hover:underline mt-2 block text-center">澳幣硬幣價值對照表 ↗</a>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🎁</span>
+                    <h4 class="font-bold text-lg mb-2">推薦紀念品</h4>
+                    <p>Jurlique 保養品、番木瓜膏、澳洲羊毛製品、Tim Tam、以及蜂膠等健康補給品。</p>
+                </div>
+            </div>
+            
+            <div class="bg-blue-900 text-white p-8 rounded-2xl mt-10">
+                <h4 class="font-bold mb-3 italic">✨ 旅遊小提醒</h4>
+                <p class="text-sm opacity-90 leading-loose">
+                    澳洲自來水可直接生飲。餐廳通常不需強制給小費。注意車輛為<strong>右駕靠左行</strong>。祝您旅途愉快！
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 text-center">
+        <p class="text-sm opacity-60">中中旅行社 2026 年度旗艦鉅獻 | 澳洲東岸三城全覽</p>
+    </footer>
+
+</body>
+</html>
