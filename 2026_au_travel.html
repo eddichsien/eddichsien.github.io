@@ -82,6 +82,9 @@
             background-color: #2563eb;
             color: white;
         }
+        /* 日出日落專屬顏色 */
+        .sun-rise { color: #f59e0b; }
+        .sun-set { color: #6366f1; }
     </style>
 </head>
 <body>
@@ -140,6 +143,93 @@
 		</section>
 
         <section class="mb-16">
+                <!-- 3. 日出日落時間表 (完整版) -->
+                <div class="text-left">
+                    <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2 mb-4">
+                        <span class="text-xl">🌅</span> 2026 澳洲城市日出日落表 (02/02-02/11)
+                    </h2>
+                    <div class="table-container bg-white shadow-sm border-orange-100 border">
+                        <table class="w-full text-sm text-left border-collapse">
+                            <thead class="bg-orange-50/50 text-slate-600 font-bold border-b">
+                                <tr>
+                                    <th class="p-3">日期</th>
+                                    <th class="p-3 text-center">布里斯本 / 黃金海岸</th>
+                                    <th class="p-3 text-center">雪梨 (DST)</th>
+                                    <th class="p-3 text-center">墨爾本 (DST)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y text-slate-700 text-[11px] md:text-sm">
+                                <tr>
+                                    <td class="p-2 font-medium bg-slate-50/50">02/02 (一)</td>
+                                    <td class="p-2 text-center">05:15 / 18:41</td>
+                                    <td class="p-2 text-center">06:14 / 20:01</td>
+                                    <td class="p-2 text-center">06:33 / 20:34</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2 font-medium bg-slate-50/50">02/03 (二)</td>
+                                    <td class="p-2 text-center">05:16 / 18:40</td>
+                                    <td class="p-2 text-center">06:15 / 20:00</td>
+                                    <td class="p-2 text-center">06:34 / 20:33</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2 font-medium bg-slate-50/50">02/04 (三)</td>
+                                    <td class="p-2 text-center">05:17 / 18:40</td>
+                                    <td class="p-2 text-center">06:16 / 19:59</td>
+                                    <td class="p-2 text-center">06:36 / 20:32</td>
+                                </tr>
+                                <tr class="bg-red-50/20">
+                                    <td class="p-2 font-medium bg-slate-50/50">02/05 (四)</td>
+                                    <td class="p-2 text-center">05:18 / 18:39</td>
+                                    <td class="p-2 text-center font-bold text-red-600">06:17 / 19:58</td>
+                                    <td class="p-2 text-center">06:37 / 20:31</td>
+                                </tr>
+                                <tr class="bg-red-50/20">
+                                    <td class="p-2 font-medium bg-slate-50/50">02/06 (五)</td>
+                                    <td class="p-2 text-center">05:19 / 18:38</td>
+                                    <td class="p-2 text-center font-bold text-red-600">06:18 / 19:57</td>
+                                    <td class="p-2 text-center">06:38 / 20:30</td>
+                                </tr>
+                                <tr class="bg-red-50/20">
+                                    <td class="p-2 font-medium bg-slate-50/50">02/07 (六)</td>
+                                    <td class="p-2 text-center">05:20 / 18:38</td>
+                                    <td class="p-2 text-center font-bold text-red-600">06:20 / 19:56</td>
+                                    <td class="p-2 text-center">06:39 / 20:29</td>
+                                </tr>
+                                <tr class="bg-green-50/20">
+                                    <td class="p-2 font-medium bg-slate-50/50">02/08 (日)</td>
+                                    <td class="p-2 text-center">05:21 / 18:37</td>
+                                    <td class="p-2 text-center">06:21 / 19:55</td>
+                                    <td class="p-2 text-center font-bold text-green-700">06:40 / 20:28</td>
+                                </tr>
+                                <tr class="bg-green-50/20">
+                                    <td class="p-2 font-medium bg-slate-50/50">02/09 (一)</td>
+                                    <td class="p-2 text-center">05:22 / 18:36</td>
+                                    <td class="p-2 text-center">06:22 / 19:54</td>
+                                    <td class="p-2 text-center font-bold text-green-700">06:41 / 20:27</td>
+                                </tr>
+                                <tr class="bg-green-50/20">
+                                    <td class="p-2 font-medium bg-slate-50/50">02/10 (二)</td>
+                                    <td class="p-2 text-center">05:23 / 18:36</td>
+                                    <td class="p-2 text-center">06:23 / 19:53</td>
+                                    <td class="p-2 text-center font-bold text-green-700">06:43 / 20:25</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2 font-medium bg-slate-50/50">02/11 (三)</td>
+                                    <td class="p-2 text-center">05:24 / 18:35</td>
+                                    <td class="p-2 text-center">06:24 / 19:52</td>
+                                    <td class="p-2 text-center">06:44 / 20:24</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="p-3 bg-orange-50/30 text-[10px] text-slate-500 italic">
+                            註：DST 表示日光節約時間。當前行程：02/02-04 昆士蘭 (UTC+10)；02/05-08 雪梨 (UTC+11)；02/08-11 墨爾本 (UTC+11)。
+                        </div>
+                    </div>
+                </div>
+		</section>
+
+
+        <section class="mb-16">
             <!-- 住宿設備表格 -->
             <div class="text-left mb-4">
                 <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2">
@@ -153,6 +243,7 @@
                         <tr>
                             <th class="p-3">日期</th>
                             <th class="p-3">夜宿飯店</th>
+                            <th class="p-3">入住時間</th>
                             <th class="p-3">早餐時間</th>
                             <th class="p-3 text-center">廚房</th>
                             <th class="p-3 text-center">洗衣</th>
@@ -160,57 +251,73 @@
                     </thead>
                     <tbody class="divide-y text-slate-700">
                         <tr>
-                            <td class="p-3 font-medium">02/02</td>
-                            <td class="p-3">Rydges South Bank Brisbane</td>
+                            <td class="p-3 font-medium">02/02 (一)</td>
+                            <td class="p-3"><a href="https://www.agoda.com/zh-tw/rydges-south-bank-hotel-brisbane/hotel/brisbane-au.html" target="_blank" class="link-tag">Rydges South Bank Brisbane</a><br>1 x Superior Twin</td>
+                            <td class="p-3">15:00 ~ 11:00</td>
                             <td class="p-3 text-slate-400">—</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                         </tr>
                         <tr>
-                            <td class="p-3 font-medium">02/03</td>
-                            <td class="p-3">JW Marriott Gold Coast</td>
+                            <td class="p-3 font-medium">02/03 (二)</td>
+                            <td class="p-3"><a href="https://www.agoda.com/zh-tw/surfers-paradise-marriott-resort-spa/hotel/gold-coast-au.html" target="_blank" class="link-tag">JW Marriott Gold Coast</a><br>1 x Guest room, 2 Double, Ocean View, Balcony</td>
+                            <td class="p-3">15:00 ~ 11:00</td>
                             <td class="p-3">06:30 ~ 10:30</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                         </tr>
                         <tr>
-                            <td class="p-3 font-medium">02/04</td>
-                            <td class="p-3">Hilton Surfers Paradise</td>
+                            <td class="p-3 font-medium">02/04 (三)</td>
+                            <td class="p-3"><a href="https://hotel.eztravel.com.tw/detail?CityID=698428&HotelID=2080636&CheckInDate=2026-02-04&CheckOutDate=2026-02-05" target="_blank" class="link-tag">Hilton Surfers Paradise</a><br>1 x 海景兩臥室公寓</td>
+                            <td class="p-3">15:00 ~ 11:00</td>
                             <td class="p-3 text-slate-400">—</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                         </tr>
                         <tr>
-                            <td class="p-3 font-medium">02/05</td>
-                            <td class="p-3">Meriton Suites World Tower</td>
+                            <td class="p-3 font-medium">02/05 (四)</td>
+                            <td class="p-3"><a href="https://www.agoda.com/zh-tw/meriton-suites-world-tower/hotel/sydney-au.html" target="_blank" class="link-tag">Meriton Suites World Tower</a><br>1 x 2 Bedroom Suite</td>
+                            <td class="p-3">15:00 ~ 10:00</td>
                             <td class="p-3 text-slate-400">—</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                         </tr>
                         <tr>
-                            <td class="p-3 font-medium">02/06</td>
-                            <td class="p-3">InterContinental Sydney</td>
+                            <td class="p-3 font-medium">02/06 (五)</td>
+                            <td class="p-3"><a href="https://www.agoda.com/zh-tw/intercontinental-sydney/hotel/sydney-au.html" target="_blank" class="link-tag">InterContinental Sydney</a><br>2 x Classic Room</td>
+                            <td class="p-3">15:00 ~ 11:00</td>
                             <td class="p-3">07:00 ~ 10:30</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                         </tr>
                         <tr>
-                            <td class="p-3 font-medium">02/07</td>
-                            <td class="p-3">Crowne Plaza Darling Harbour</td>
+                            <td class="p-3 font-medium">02/07 (六)</td>
+                            <td class="p-3"><a href="https://www.agoda.com/zh-tw/crowne-plaza-sydney-darling-harbour/hotel/sydney-au.html" target="_blank" class="link-tag">Crowne Plaza Darling Harbour</a><br>1 x 2 Queen Beds Premium</td>
+                            <td class="p-3">15:00 ~ 11:00</td>
                             <td class="p-3">07:00 ~ 11:00</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                             <td class="p-3 text-center text-slate-300">✕</td>
                         </tr>
                         <tr class="bg-blue-50/30">
-                            <td class="p-3 font-medium">02/08-09</td>
-                            <td class="p-3">Quay West Suites Melbourne</td>
+                            <td class="p-3 font-medium">02/08 (日)</td>
+                            <td class="p-3"><a href="https://hotel.eztravel.com.tw/detail?CityID=324466&HotelID=2197394&CheckInDate=2026-02-08&CheckOutDate=2026-02-10" target="_blank" class="link-tag">Quay West Suites Melbourne</a><br>1 x 兩臥室兩衛甄選公寓</td>
+                            <td class="p-3">14:00 ~ 11:00</td>
+                            <td class="p-3">07:00 ~ 10:00</td>
+                            <td class="p-3 text-center text-green-600 font-bold">✓</td>
+                            <td class="p-3 text-center text-green-600 font-bold">✓</td>
+                        </tr>
+                        <tr class="bg-blue-50/30">
+                            <td class="p-3 font-medium">02/09 (一)</td>
+                            <td class="p-3"><a href="https://hotel.eztravel.com.tw/detail?CityID=324466&HotelID=2197394&CheckInDate=2026-02-08&CheckOutDate=2026-02-10" target="_blank" class="link-tag">Quay West Suites Melbourne</a><br>1 x 兩臥室兩衛甄選公寓</td>
+                            <td class="p-3">14:00 ~ 11:00</td>
                             <td class="p-3">07:00 ~ 10:00</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                         </tr>
                         <tr>
-                            <td class="p-3 font-medium">02/10</td>
-                            <td class="p-3">Meriton Suites Melbourne</td>
+                            <td class="p-3 font-medium">02/10 (二)</td>
+                            <td class="p-3"><a href="https://www.agoda.com/zh-tw/meriton-suites-melbourne/hotel/sydney-au.html" target="_blank" class="link-tag">Meriton Suites Melbourne</a><br>1 x 2 Bedroom Suite</td>
+                            <td class="p-3">15:00 ~ 10:00</td>
                             <td class="p-3 text-slate-400">—</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
                             <td class="p-3 text-center text-green-600 font-bold">✓</td>
@@ -263,8 +370,8 @@
                                 <tr>
                                     <td class="p-3 whitespace-nowrap">02/07 (六)</td>
                                     <td class="p-3 font-medium text-red-700">藍山絕景世界纜車通票</td>
-                                    <td class="p-3 font-bold text-red-700">10:00??? (TBD) *******</td>
-                                    <td class="p-3"><a href="https://tw.trip.com/xticket/resource-detail?resourceid=57284212&locale=zh-TW" target="_blank" class="link-tag">連結</a></td>
+                                    <td class="p-3 font-bold text-xs">12:00</td>
+                                    <td class="p-3"><a href="https://tw.trip.com/xticket/resource-detail?resourceid=57284228&locale=zh-TW" target="_blank" class="link-tag">連結</a></td>
                                 </tr>
                                 <tr>
                                     <td class="p-3 whitespace-nowrap">02/08 (日)</td>
