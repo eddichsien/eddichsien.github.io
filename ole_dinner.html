@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ole Restaurant - 布里斯本南岸西班牙風味指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif TC', serif; }
+        .tab-btn.active { border-bottom: 2px solid #b91c1c; color: #b91c1c; }
+        .card-zoom:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- 頂部大圖 -->
+    <header class="relative h-[60vh] flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1515443961218-152367888e4b?auto=format&fit=crop&q=80&w=1600" class="absolute inset-0 w-full h-full object-cover" alt="西班牙美食背景">
+        <div class="relative z-20 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-wider">Ole Restaurant</h1>
+            <p class="text-xl md:text-2xl font-light italic">South Bank's Authentic Spanish Heart</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <span class="bg-red-700 px-4 py-1 rounded-full text-sm">經典 Tapas</span>
+                <span class="bg-red-700 px-4 py-1 rounded-full text-sm">傳統大鍋飯 Paella</span>
+                <span class="bg-red-700 px-4 py-1 rounded-full text-sm">地中海氛圍</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold text-red-800 mb-6 border-b-2 border-red-800 pb-2 inline-block">Reservation</h2>
+                <p class="text-lg leading-relaxed mb-4">
+					<img src="ole_reservation.jpg">
+                </p>
+                <p class="text-lg leading-relaxed">
+                    <a href="菜單 _ 在皮特街訂購西班牙美食 _ Encasa --- Menu _ Order Spanish Food in Pitt Street _ Encasa.html" target="_blank" class="text-blue-700 font-bold hover:underline">菜單 (中英對照) →</a>
+                </p>
+                <p class="text-lg leading-relaxed">
+                    <a href="團體菜單 _ 雪梨正宗西班牙美食 _ Encasa --- Group Menu _ Authentic Spanish Food in Sydney _ Encasa.html" target="_blank" class="text-blue-700 font-bold hover:underline">團體菜單 (中英對照) →</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- 餐廳基本資訊 -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold text-red-800 mb-6 border-b-2 border-red-800 pb-2 inline-block">關於 Ole</h2>
+                <p class="text-lg leading-relaxed mb-4">
+                    Ole Restaurant 坐落於布里斯本熱鬧的 Little Stanley Street，是南岸 (South Bank) 最受歡迎的西班牙料理餐廳之一。這裡以熱情奔放的開放式廚房、豐富的葡萄酒單以及最道地的西班牙小食 (Tapas) 聞名。
+                </p>
+                <p class="text-lg leading-relaxed">
+                    無論是浪漫的晚餐約會，還是與好友分享熱騰騰的海鮮大鍋飯，Ole 營造的愜意氛圍都能讓你彷彿瞬間置身於馬德里的街頭。
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+                <h3 class="font-bold text-xl mb-4 text-stone-700">📍 餐廳資訊</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><strong>地址：</strong><br>Shop B12 Little Stanley St, South Brisbane 4101</li>
+                    <li><strong>營業時間：</strong><br>每日 11:30 AM 直到深夜</li>
+                    <li><strong>建議：</strong>週末建議提前預約以免久候</li>
+                    <li class="pt-4">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ole+Restaurant+South+Bank" target="_blank" class="text-red-700 font-bold hover:underline">在 Google 地圖中查看 →</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 點餐攻略 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-red-800 mb-8 text-center">🥘 點餐攻略：內行人的美味清單</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tapas 小食 -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold flex items-center gap-2"><span class="text-3xl">🧆</span> 必點 Tapas (小食)</h3>
+                    
+                    <div class="flex gap-4 items-start">
+                        <div class="w-24 h-24 bg-stone-200 rounded-lg overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&q=80&w=200" alt="西班牙可樂餅" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Croquetas (西班牙可樂餅)</h4>
+                            <p class="text-sm text-stone-600 italic">每日口味不同 (Daily Selection)</p>
+                            <p class="text-sm mt-1 text-stone-500">外皮酥脆，內餡綿密滑順，是 Ole 的招牌開胃菜。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-start">
+                        <div class="w-24 h-24 bg-stone-200 rounded-lg overflow-hidden shrink-0 text-center flex items-center justify-center text-4xl">🍤</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Gambas al Ajillo (大蒜蝦)</h4>
+                            <p class="text-sm text-stone-600">Garlic Prawns, chilli, olive oil</p>
+                            <p class="text-sm mt-1 text-stone-500">經典中的經典！記得加點麵包來沾底部的蒜香橄欖油。</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-start">
+                        <div class="w-24 h-24 bg-stone-200 rounded-lg overflow-hidden shrink-0 text-center flex items-center justify-center text-4xl">🥩</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Chorizo al Vino</h4>
+                            <p class="text-sm text-stone-600">Spanish sausage, red wine reduction</p>
+                            <p class="text-sm mt-1 text-stone-500">濃郁的紅酒醬汁搭配鹹香的西班牙臘腸，極其下酒。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paella 大鍋飯 -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold flex items-center gap-2"><span class="text-3xl">🥘</span> 靈魂主食 (Paella)</h3>
+                    <div class="bg-red-50 p-6 rounded-3xl border border-red-100">
+                        <h4 class="font-bold text-xl mb-2">Paella de Marisco (海鮮大鍋飯)</h4>
+                        <p class="text-stone-700 mb-4 text-sm leading-relaxed">
+                            來到 Ole 絕對不能錯過這道菜！選用西班牙短米，吸飽了海鮮高湯，配上新鮮大蝦、淡菜與花枝。
+                        </p>
+                        <ul class="text-xs space-y-2 text-red-800 font-bold">
+                            <li class="flex items-center gap-2">⏱️ 製作時間約 30-40 分鐘，建議入座即點。</li>
+                            <li class="flex items-center gap-2">🥄 記得刮一刮鍋底的「Socarrat」(脆香鍋巴)。</li>
+                            <li class="flex items-center gap-2">👥 份量較大，建議 2-3 人分享。</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold flex items-center gap-2 mt-8"><span class="text-3xl">🍷</span> 飲品搭配</h3>
+                    <p class="text-stone-600 text-sm">
+                        推薦點一壺 **Sangria** (西班牙水果酒)，酸甜清爽的口感非常解膩，是西班牙餐桌的靈魂伴侶。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 用餐貼士 -->
+        <section class="bg-stone-800 text-white rounded-[3rem] p-10 md:p-16">
+            <h2 class="text-3xl font-bold mb-10 text-center">✨ 內行人用餐小撇步</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center">
+                    <div class="text-4xl mb-4 text-red-400">🕒</div>
+                    <h4 class="font-bold text-xl mb-2">避開高峰期</h4>
+                    <p class="text-stone-400 text-sm">週五、週六晚上 7 點是人潮最擁擠的時候，建議預約 6 點或 8 點半後用餐更悠閒。</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-4 text-red-400">🪑</div>
+                    <h4 class="font-bold text-xl mb-2">座位選擇</h4>
+                    <p class="text-stone-400 text-sm">想要熱鬧氛圍選室內看廚房表演；想要愜意涼爽選戶外，還能欣賞 Little Stanley St 的街景。</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl mb-4 text-red-400">🥐</div>
+                    <h4 class="font-bold text-xl mb-2">甜點留肚子</h4>
+                    <p class="text-stone-400 text-sm">他們的 **Churros** (西班牙油條) 搭配濃郁巧克力醬，是完美的結尾。</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-100 py-12 px-6 text-center border-t border-stone-200 mt-20">
+        <p class="text-stone-500 text-sm italic">"Donde se come bien, se vive mejor." (吃得好，活得更好)</p>
+        <p class="text-stone-400 text-xs mt-4 uppercase tracking-widest">Ole Restaurant South Bank Guide</p>
+    </footer>
+
+</body>
+</html>
