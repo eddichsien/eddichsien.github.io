@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stalactites Restaurant - 墨爾本必吃希臘料理指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        
+        :root {
+            --greek-blue: #005A9C;
+            --marble-white: #F5F5F5;
+        }
+
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: var(--marble-white); }
+        h1, h2, h3 { font-family: 'Libre+Baskerville', serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1533777324545-e016b7a224d8?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .stalactite-pattern {
+            background-image: radial-gradient(#005A9C 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- 頂部導航 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-[#005A9C] rounded-full"></div>
+                <span class="text-xl font-bold tracking-widest text-[#005A9C]">STALACTITES</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#intro" class="hover:text-blue-700 transition">傳奇故事</a>
+                <a href="#souvlaki" class="hover:text-blue-700 transition">招牌捲餅</a>
+                <a href="#platters" class="hover:text-blue-700 transition">家庭大拼盤</a>
+                <a href="#tips" class="hover:text-blue-700 transition">用餐貼士</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <header class="hero-gradient h-[60vh] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Melbourne's Greek Icon Since 1978</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Stalactites</h1>
+            <p class="max-w-2xl mx-auto text-lg opacity-90 font-light">
+                在墨爾本著名的希臘區心臟地帶，體驗在鐘乳石奇觀下享用傳承三代的道地希臘盛宴。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold text-red-800 mb-6 border-b-2 border-red-800 pb-2 inline-block">菜單連結</h2>
+				<br>
+                <p class="text-lg leading-relaxed">
+                    <a href="https://order.online/store/stalactites-restaurant-melbourne-924955" target="_blank" class="text-blue-700 font-bold hover:underline">線上菜單  →</a>
+                </p>
+            </div>
+        </section>
+
+		<img src="stalactites_menu1.jpg">
+		<br>
+		<img src="stalactites_menu2.jpg">
+		<br>
+		<img src="stalactites_menu3.jpg">
+		<br>
+
+        <!-- 簡介 -->
+        <section id="intro" class="mb-24 flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6 border-l-4 border-[#005A9C] pl-4">關於「鐘乳石」餐廳</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Stalactites 是墨爾本希臘區（Greek Precinct）最負盛名的地標。這家由家族經營的餐廳以其獨特的室內裝飾——**手繪鐘乳石天花板**而得名。
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                    這裡不僅是墨爾本人的集體回憶，更是許多遊客來到墨爾本的第一站。他們以嚴格選擇食材著稱，所有的肉類均來自澳洲本地農場，並採用傳統的旋轉烤肉（Giro）方式烹調。
+                </p>
+            </div>
+            <div class="flex-1 grid grid-cols-2 gap-4">
+                <div class="bg-blue-100 rounded-2xl h-64 flex items-center justify-center overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover" alt="[希臘沙拉]">
+                </div>
+                <div class="bg-blue-600 rounded-2xl h-64 flex flex-col items-center justify-center text-white p-6 text-center">
+                    <span class="text-4xl mb-2">🏛️</span>
+                    <p class="text-sm font-bold">100% 家族經營</p>
+                    <p class="text-xs opacity-75 mt-2">傳承三代的傳統祕方</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 點餐攻略：招牌 Souvlaki -->
+        <section id="souvlaki" class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">🌯 靈魂捲餅 (Souvlaki)</h2>
+                <p class="text-slate-500">這是每個造訪者的必點選項，也是 Stalactites 稱霸墨爾本的原因。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-[#005A9C]">
+                    <h3 class="text-2xl font-bold mb-4">經典羊肉/雞肉 Souvlaki</h3>
+                    <p class="text-slate-600 mb-6">
+                        使用新鮮烤製的皮塔餅 (Pita)，包裹著多汁的旋轉烤肉、生菜、番茄、洋蔥，以及他們家靈魂所在的 **Tzatziki (希臘優格蒜泥醬)**。
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <span class="px-4 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">無麩質可選</span>
+                        <span class="px-4 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold">推薦雞羊混點</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-slate-800">
+                    <h3 class="text-2xl font-bold mb-4">The "Ironman" Souvlaki</h3>
+                    <p class="text-slate-600 mb-6">
+                        為了向澳洲網球公開賽致敬而推出的品項。除了雙倍肉量，還加入了薯條在餅內！份量極大，適合大胃王挑戰。
+                    </p>
+                    <p class="text-sm text-blue-600 font-bold italic">墨爾本深夜宵夜的最佳選擇。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 點餐攻略：拼盤與配菜 -->
+        <section id="platters" class="mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">🥗 多人分享與正餐品項</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 品項 1 -->
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 h-48 bg-slate-200">
+                         <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="[希臘拼盤]">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Mixed Meat Platter</h4>
+                    <p class="text-sm text-slate-500 italic">綜合肉類拼盤：適合 2-3 人，包含雞、羊肉、沙拉、皮塔餅與沾醬。</p>
+                </div>
+                <!-- 品項 2 -->
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 h-48 bg-slate-200">
+                         <img src="https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="[希臘木莎卡]">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Moussaka (木莎卡)</h4>
+                    <p class="text-sm text-slate-500 italic">希臘千層派：茄子、絞肉與厚厚的貝夏梅醬，像蛋糕般紮實濃郁。</p>
+                </div>
+                <!-- 品項 3 -->
+                <div class="group">
+                    <div class="rounded-2xl overflow-hidden mb-4 h-48 bg-slate-200">
+                         <img src="https://images.unsplash.com/photo-1516685018646-54838bd1af70?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="[希臘沾醬]">
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Taramasalata / Hummus</h4>
+                    <p class="text-sm text-slate-500 italic">必點前菜：搭配現烤熱皮塔餅，魚子醬或鷹嘴豆泥沾醬是希臘餐桌的靈魂。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 用餐貼士 -->
+        <section id="tips" class="bg-[#005A9C] text-white rounded-[2rem] p-8 md:p-12 stalactite-pattern">
+            <h2 class="text-3xl font-bold mb-8">💡 內行人的用餐貼士</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-2xl">⏳</span>
+                        <div>
+                            <p class="font-bold">避開高峰</p>
+                            <p class="text-sm opacity-80">晚餐時段（6-8PM）通常需要排隊。因為全天候服務，建議選擇下午或 9 點後的「宵夜時段」，氣氛更放鬆。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-2xl">🥣</span>
+                        <div>
+                            <p class="font-bold">隱藏必點：Lemon Potatoes</p>
+                            <p class="text-sm opacity-80">這家的檸檬烤馬鈴薯吸飽了肉汁與檸檬香氣，是捲餅以外最讓人驚豔的副菜。</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-2xl">📱</span>
+                        <div>
+                            <p class="font-bold">外帶更快</p>
+                            <p class="text-sm opacity-80">如果你只是想吃 Souvlaki 捲餅，外帶區的處理速度通常比等內用桌位快得多。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-2xl">🍰</span>
+                        <div>
+                            <p class="font-bold">別忘了甜點</p>
+                            <p class="text-sm opacity-80">Baklava (果仁蜜餅) 是甜食愛好者的天堂，甜度很高但配上希臘咖啡非常完美。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁腳/資訊 -->
+    <footer class="bg-slate-900 text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6 italic">Stalactites Restaurant</h3>
+                <p class="opacity-70 text-sm">177/183 Lonsdale St, Melbourne VIC 3000</p>
+                <p class="opacity-70 text-sm mt-2">☎️ (03) 9663 3316</p>
+                <div class="mt-8 flex gap-4">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Stalactites+Restaurant+Melbourne" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-xs font-bold transition">Google Map 導航</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-12">
+                <div>
+                    <h5 class="font-bold mb-4 text-blue-400">營業時間</h5>
+                    <ul class="text-xs space-y-2 opacity-70">
+                        <li>週日至週四：10:00 - 00:00</li>
+                        <li>週五至週六：10:00 - 02:00</li>
+                        <li class="text-blue-300">*部分時段 24 小時營業，請依官網公告為準</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4 text-blue-400">飲食需求</h5>
+                    <ul class="text-xs space-y-2 opacity-70">
+                        <li>✅ 認證無麩質 (Coeliac Australia)</li>
+                        <li>✅ 素食友善</li>
+                        <li>✅ 適合大型團體</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-slate-800 text-center text-[10px] opacity-40 uppercase tracking-widest">
+            © Stalactites Unofficial Guide - Melbourne Heritage Dining
+        </div>
+    </footer>
+
+</body>
+</html>

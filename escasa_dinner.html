@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encasa Restaurant - 雪梨 Pitt St 西班牙道地家常指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', 'Noto Serif TC', serif; }
+        .tab-active { border-bottom: 4px solid #ea580c; color: #ea580c; }
+        .food-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-[#fdfbf7] text-stone-800">
+
+    <!-- 導航欄 -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-2xl font-bold text-orange-700 tracking-tighter">ENCASA</span>
+            <div class="space-x-6 text-sm font-bold">
+                <a href="#about" class="hover:text-orange-600">關於</a>
+                <a href="#dine-in" class="hover:text-orange-600">內用必點</a>
+                <a href="#takeaway" class="hover:text-orange-600">外帶攻略</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <header class="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1600" class="absolute inset-0 w-full h-full object-cover" alt="Encasa 氛圍">
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Encasa Restaurant</h1>
+            <p class="text-lg md:text-xl font-light opacity-90 tracking-widest">“Like Being at Home” — Authentic Spanish in Haymarket</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold text-red-800 mb-6 border-b-2 border-red-800 pb-2 inline-block">菜單連結</h2>
+                <p class="text-lg leading-relaxed">
+                    <a href="https://encasa.com.au/" target="_blank" class="text-blue-700 font-bold hover:underline">官網 →</a>
+                </p>
+                <p class="text-lg leading-relaxed">
+                    <a href="菜單 _ 在皮特街訂購西班牙美食 _ Encasa --- Menu _ Order Spanish Food in Pitt Street _ Encasa.html" target="_blank" class="text-blue-700 font-bold hover:underline">菜單 (中英對照) →</a>
+                </p>
+                <p class="text-lg leading-relaxed">
+                    <a href="團體菜單 _ 雪梨正宗西班牙美食 _ Encasa --- Group Menu _ Authentic Spanish Food in Sydney _ Encasa.html" target="_blank" class="text-blue-700 font-bold hover:underline">團體菜單 (中英對照) →</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- 餐廳簡介 -->
+        <section id="about" class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-stone-900 mb-6">關於 Encasa</h2>
+                <p class="text-lg text-stone-600 leading-relaxed mb-6">
+                    自 1990 年代起，Encasa 就在雪梨 Pitt Street 服務喜愛西班牙菜的饕客。這不僅是一家餐廳，更是一個分享美食的空間。這裡的廚房以傳統的 **Tapas (小食)** 與 **Paella (大鍋飯)** 為傲，並堅持使用最傳統的食譜。
+                </p>
+                <div class="flex items-start gap-4 text-sm text-stone-500">
+                    <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded font-bold">📍 地址</span>
+                    <p>423 Pitt St, Haymarket NSW 2000, Australia</p>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-2xl rotate-2">
+                <img src="https://images.unsplash.com/photo-1562601519-1bb440eb713c?auto=format&fit=crop&q=80&w=800" alt="西班牙火腿與乳酪">
+            </div>
+        </section>
+
+        <!-- 內用點餐攻略 -->
+        <section id="dine-in" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-stone-900">🍽️ 內用點餐攻略</h2>
+                <p class="text-stone-500 mt-2">適合社交分享的西班牙靈魂料理</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tapas 經典 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 food-card">
+                    <div class="text-orange-600 text-3xl mb-4">🥘</div>
+                    <h3 class="text-xl font-bold mb-3">必點 Tapas</h3>
+                    <ul class="space-y-4 text-stone-600">
+                        <li>
+                            <span class="block font-bold text-stone-800">Patatas Bravas</span>
+                            <small>酥炸馬鈴薯配辣味番茄醬與蒜泥蛋黃醬。</small>
+                        </li>
+                        <li>
+                            <span class="block font-bold text-stone-800">Albóndigas</span>
+                            <small>傳統西班牙肉丸，浸在濃郁的番茄醬汁中。</small>
+                        </li>
+                        <li>
+                            <span class="block font-bold text-stone-800">Chorizo a la Plancha</span>
+                            <small>煎西班牙香腸，鹹香適中，配酒一流。</small>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 招牌大鍋飯 -->
+                <div class="bg-orange-600 p-6 rounded-2xl shadow-lg text-white food-card">
+                    <div class="text-white text-3xl mb-4">🔥</div>
+                    <h3 class="text-xl font-bold mb-3">靈魂 Paella</h3>
+                    <p class="mb-4 opacity-90 text-sm">Encasa 的 Paella 是現點現做，約需 30-45 分鐘。</p>
+                    <ul class="space-y-4">
+                        <li class="border-b border-orange-400 pb-2">
+                            <span class="block font-bold">Paella de Carne</span>
+                            <small>肉類大鍋飯：含雞肉、西班牙香腸與豆類。</small>
+                        </li>
+                        <li class="border-b border-orange-400 pb-2">
+                            <span class="block font-bold">Paella Mixta</span>
+                            <small>海陸雙拼：海鮮與雞肉的完美融合。</small>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-xs font-bold bg-orange-800/30 p-2 rounded">💡 貼士：一定要刮乾淨底部的鍋巴！</p>
+                </div>
+
+                <!-- 飲品甜點 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 food-card">
+                    <div class="text-orange-600 text-3xl mb-4">🍷</div>
+                    <h3 class="text-xl font-bold mb-3">飲品與甜點</h3>
+                    <ul class="space-y-4 text-stone-600">
+                        <li>
+                            <span class="block font-bold text-stone-800">Sangria</span>
+                            <small>這裡的 Sangria 被許多人評為雪梨最平衡的一款。</small>
+                        </li>
+                        <li>
+                            <span class="block font-bold text-stone-800">Churros con Chocolate</span>
+                            <small>現炸西班牙油條，搭配熱巧克力。必吃結尾！</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 外帶品項攻略 -->
+        <section id="takeaway" class="mb-20 bg-stone-900 rounded-[3rem] p-8 md:p-16 text-white">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="flex-1">
+                    <h2 class="text-4xl font-bold mb-6">🥡 外帶攻略 (Takeaway)</h2>
+                    <p class="text-stone-400 mb-8 leading-relaxed">
+                        如果你想帶走一份西班牙美味，Encasa 的外帶選項非常友善。部分料理（如 Paella）雖然可以外帶，但更推薦外帶他們的 **Bocadillos (西班牙三明治)** 或冷盤，因為口感最能維持。
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-700 rounded-full flex items-center justify-center font-bold">01</div>
+                            <div>
+                                <h4 class="font-bold">Bocadillos (三明治系列)</h4>
+                                <p class="text-sm text-stone-400">這是午餐外帶的首選，特製長棍麵包夾著 Serrano 火腿或 Chorizo，簡單卻驚艷。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-700 rounded-full flex items-center justify-center font-bold">02</div>
+                            <div>
+                                <h4 class="font-bold">Ensaimadas</h4>
+                                <p class="text-sm text-stone-400">他們家自製的西班牙甜點螺旋麵包，非常適合外帶作為下午茶。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 bg-orange-700 rounded-full flex items-center justify-center font-bold">03</div>
+                            <div>
+                                <h4 class="font-bold">預約外帶</h4>
+                                <p class="text-sm text-stone-400">建議透過官網或電話預訂，Paella 至少需要提前 40 分鐘預約。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 space-y-4">
+                    <div class="bg-stone-800 p-6 rounded-2xl border border-stone-700">
+                        <h4 class="text-orange-500 font-bold mb-2">💡 外帶保持美味小秘訣</h4>
+                        <ul class="text-xs text-stone-400 space-y-2">
+                            <li>• Paella 帶回家後若冷掉，可用平底鍋中小火微熱 3 分鐘。</li>
+                            <li>• Tapas 類型的炸物建議儘快食用，避免水氣軟化表皮。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 預約/地圖卡片 -->
+        <section class="bg-stone-100 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <h3 class="text-2xl font-bold mb-2">準備好體驗 Encasa 了嗎？</h3>
+                <p class="text-stone-500">雪梨最受歡迎的西班牙地頭蛇餐廳。</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Encasa+Restaurant+Pitt+St" target="_blank" class="bg-stone-900 text-white px-8 py-3 rounded-full font-bold hover:bg-black transition-colors">導航前往</a>
+                <a href="tel:+61292114257" class="bg-orange-600 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-700 transition-colors">電話預約</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 text-center text-stone-400 text-sm border-t border-stone-100">
+        <p>© Encasa Restaurant Guide - Experience the taste of home in Sydney.</p>
+    </footer>
+
+</body>
+</html>
